@@ -42,4 +42,9 @@ class M_mahasiswa extends CI_Model {
 		
 		return ($q->num_rows() > 0) ? $q->result_array() : 0 ;	
 	}
+
+	public function status_krs(){
+		$q = $this->db->get_where('config', ['ket'=>'krs']);
+		return ($q->num_rows() > 0) ? $q->row()->st : 0 ;
+	}
 }

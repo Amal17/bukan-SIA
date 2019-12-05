@@ -36,6 +36,25 @@
             </div>
           </div>
         </div>
+        <div class="col-5">
+          <div class="card">
+            <div class="card-header">Status KRS</div>
+            <div class="card-body">
+              <form method="POST" action="<?=base_url('ak/kelas/status_krs')?>">
+              <div class="form-group row">
+                <div class="col-sm-6">
+                  <select class="custom-select" name="status">
+                    <?=$cs?>
+                  </select>
+                </div>
+                <div class="col-sm-1">
+                  <button type="submit" class="btn btn-info">Simpan</button>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row">
@@ -58,6 +77,20 @@
                     <div class="col-sm-8">
                       <input type="text" hidden name="ta" value="<?=$ta?>">
                       <input type="text" class="form-control" name="kelas" placeholder="Kelas">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">SKS</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" name="sks" placeholder="SKS">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Dosen</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" name="dosen">
+                        <?=$d?>
+                      </select>
                     </div>
                   </div>
                 </div>

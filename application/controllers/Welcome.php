@@ -11,7 +11,7 @@ class Welcome extends CI_Controller {
 			redirect('dosen');
 		} elseif ($this->session->level == 'mahasiswa') {
 			redirect('mahasiswa');
-		}
+		} 
     }
 
 	public function index(){
@@ -33,6 +33,7 @@ class Welcome extends CI_Controller {
 					//Login mahasiswa
 					$this->session->set_userdata('id_mahasiswa', $r->id);
 					$this->session->set_userdata('nim', $r->nim);
+					$this->session->set_userdata('jurusan', $r->jurusan);
 					$this->session->set_userdata('level', 'mahasiswa');
 					redirect('mahasiswa');
 				}

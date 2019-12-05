@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Data Kelas <span style="font-size: 18px"><?=$j?></span></h1>
+            <h1>KHS</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -20,11 +20,13 @@
               <table id="example2" class="table table-bordered table-hover">
                 <thead>
                 <tr>
-                  <th>ID</th>
+                  <th>No</th>
                   <th>Kelas</th>
-                  <th>SKS</th>
                   <th>Dosen</th>
-                  <th>Aksi</th>
+                  <th>SKS</th>
+                  <th>Huruf</th>
+                  <th>Angka</th>
+                  <th>Nilai</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -32,17 +34,20 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                  <th>ID</th>
+                  <th>No</th>
                   <th>Kelas</th>
-                  <th>SKS</th>
                   <th>Dosen</th>
-                  <th>Aksi</th>
+                  <th>SKS</th>
+                  <th>Huruf</th>
+                  <th>Angka</th>
+                  <th>Nilai</th>
                 </tr>
                 </tfoot>
               </table>
             </div>
           </div>
         </div>
-      </div>
     </section>
+    <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
