@@ -69,6 +69,8 @@ class Mahasiswa extends CI_Controller {
 					$angka = 0.5;
 				} else if ($d['nilai'] == 'E') {
 					$angka = 0;
+				} else {
+					$angka = NULL;
 				}
 				$x .= '<tr><td>'.$i.'</td><td>'.$d['kelas'].'</td><td>'.$d['nama'].'</td><td>'.$d['sks'].'</td><td>'.$d['nilai'].'</td><td>'.$angka.'</td><td>'.$angka*$d['sks'].'</td></tr>';
 				$tot_sks += $d['sks'];
